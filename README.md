@@ -1,8 +1,8 @@
 
-$$\textcolor{blue}{\text{Deep Learning in python}}$$
+#### $$\textcolor{blue}{\text{Deep Learning in python}}$$
 
 
-> __Warning__
+
 
 &#x1F49B;
 
