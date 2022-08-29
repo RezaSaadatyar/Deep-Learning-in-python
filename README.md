@@ -1,7 +1,7 @@
-# Deep-Learning-in-python
-Deep Learning in python
 
-$$\textcolor{red}{\text{Hello World}}{\text{Hello World}}\textcolor{yellow}{\text{Hello World}}$$
+$$\textcolor{blue}{\text{Deep Learning in python}}$$
+
+
 > __Warning__
 
 &#x1F49B;
