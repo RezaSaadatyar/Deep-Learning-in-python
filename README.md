@@ -9,7 +9,9 @@ Complexity issues:
  - Reinforement Laerning
  - Natural Language Processing
  - Image Classification/Segmentation
- 
+
+
+![image](https://user-images.githubusercontent.com/96347878/202418457-9e30e725-ee08-4a42-a716-b54b546ce545.png)
 
  
 
