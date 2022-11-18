@@ -10,10 +10,12 @@ Complexity issues:
  - Natural Language Processing
  - Image Classification/Segmentation
 
+**Wide and Deep Network** 
 
-![image](https://user-images.githubusercontent.com/96347878/202418457-9e30e725-ee08-4a42-a716-b54b546ce545.png)
 
-![image](https://user-images.githubusercontent.com/96347878/202430880-87299456-5515-4eff-abf2-2bcd29cd89f6.png)
+![image](https://user-images.githubusercontent.com/96347878/202599415-21af41e0-3d0d-46b0-9f9a-1384879fe6c0.png)
+
+![image](https://user-images.githubusercontent.com/96347878/202598550-cca36b19-da51-4849-a590-4f848ae4e898.png)
 
 
 ![image](https://user-images.githubusercontent.com/96347878/202598209-f2a7aceb-a6c1-4698-97fd-3c705d19e5dd.png)
