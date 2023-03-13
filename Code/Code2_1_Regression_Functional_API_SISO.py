@@ -2,6 +2,7 @@
 from tensorflow import keras      # print(keras.__version__, tf.__version__)
 import matplotlib.pyplot as plt
 from sklearn import datasets, model_selection, preprocessing
+
 # =========================================== Regression ===================================================
 # --------------------------------------- Step 1. Load data ------------------------------------------------
 Data = datasets.fetch_california_housing()
