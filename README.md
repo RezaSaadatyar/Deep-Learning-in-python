@@ -3,12 +3,14 @@
 
 Having too much information<br/>
 A sufficient number of computing resources<br/>
+
 Complexity issues:
- - bject Detection
+ - Object Detection
  - Speech Recognition
+ - Image Segmentation
+ - Image Classification
  - Reinforement Laerning
  - Natural Language Processing
- - Image Classification/Segmentation
 
 **Wide and Deep Network** 
 
