@@ -55,5 +55,15 @@ feature maps.
 filter/kernel during the convolution operation.
  - `Padding:` Adding additional pixels or values
 around the input data to preserve spatial
-information during convolution.
+information during convolution.<br/>
+
+**What Is the Mechanism Behind CNNs?**
+ - `Step 1, Input Layer:` The input to the CNN is typically an image or a set of images. Each image is
+represented as a grid of pixels, where each pixel
+contains color information (RGB values) or grayscale
+intensity.
+ - `Step 2. Convolutional Layers:` The CNN begins with one or more convolutional layers. Each convolutional layer consists of multiple filters/kernels, which are small matrices of weights. These filters are convolved with the input data using a sliding window approach. The filters detect specific features or patterns by performing element-wise multiplication and summation.
+  - `Step 3. Activation Function:` After the convolution operation, an activation function, such as ReLU (Rectified Linear Unit), is applied element-wise to introduce non-linearity.
+ - `Step 4. Pooling Layers:` To reduce the spatial
+dimensions of the feature maps and extract the most important information, pooling layers are added. Common types of pooling operations include max pooling or average pooling. Pooling helps reduce the number of parameters and computational complexity while retaining the most salient features.
 
