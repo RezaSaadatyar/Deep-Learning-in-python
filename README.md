@@ -74,3 +74,23 @@ training, the CNN's output is compared to the true labels using a loss function,
  - `Step 8. Backpropagation:` Backpropagation is used to compute and propagate gradients through the network. The gradients are used to update the weights in a direction that reduces the
 loss. The process of forward propagation and backpropagation is repeated for a certain number of epochs to train the CNN.
  - `Step 9. Inference:` Once the CNN is trained, it can be used for inference on new, unseen data. The input data is passed through the network, and the output is obtained from the output layer.
+
+ **Advantages of CNN:**<br/>
+  - `Hierarchical Feature Learning:` CNNs are designed
+to automatically learn hierarchical representations of features. Convolutional layers capture low-level features like edges and textures, while deeper layers capture higher-level features like shapes and object parts. This hierarchical feature learning
+enables CNNs to extract meaningful representations from raw visual data.
+ - `Spatial Invariance:` CNNs are able to achieve spatial invariance, meaning they can recognize patterns or features regardless of their location in the input data. This is achieved through the use of shared weights in convolutional layers, where the same filters are applied across the entire input, allowing the network to learn local patterns irrespective of their position.
+ - `Parameter Sharing:` CNNs exploit the idea of parameter sharing, meaning that the same filters are applied to different spatial locations of the input. This significantly reduces the number of parameters in the network compared to fully connected networks, making CNNs more efficient in terms of memory usage and computational requirements.
+ - `Translation Invariance:` CNNs are capable of achieving translation invariance, meaning they can recognize objects or features even if they are slightly shifted or translated in the input image. This is because the convolutional operation is performed at different locations across the input, allowing the network to capture local patterns irrespective of their precise location.
+  - `Sparse Connectivity:` CNNs have sparse connectivity,
+which means that each neuron is only connected to a small local region of the input. This sparse connectivity reduces the computational complexity of the network and enables efficient processing of large-scale visual data.
+ - `Effective Parameter Learning:` CNNs leverage gradientbased
+optimization techniques, such as backpropagation, to learn the optimal weights and parameters during training. This allows the network to adapt and improve its performance on specific tasks by minimizing the defined loss function.
+ - `Transfer Learning:` CNNs trained on large datasets, such as ImageNet, can be used as feature extractors for new, smaller datasets. This transfer learning approach allows CNNs to leverage pre-trained knowledge and generalize well to new tasks even with limited training data.
+
+ **Disadvantages of CNN**<br/>
+  - `Computational Complexity:` CNNs can be computationally expensive to train and evaluate, especially for deeper networks with a large number of parameters. The high computational requirements may limit the deployment of CNNs on resource-constrained devices or in real-time applications.
+ - `Need for Large Amounts of Data`: CNNs typically require large amounts of labeled training data to generalize well and achieve high performance. Acquiring and annotating such datasets can be time-consuming and costly, particularly in domains with limited data availability or in specialized tasks.
+- `Lack of Interpretability:` CNNs are often considered black-box models, meaning that it can be challenging to interpret and understand the
+decision-making process within the network. The complex hierarchical representations and a large number of parameters make it difficult to explain why a particular prediction or classification was made.
+- `Vulnerability to Adversarial Attacks:` CNNs have been shown to be vulnerable to adversarial attacks, where small, imperceptible perturbations to input images can lead to incorrect or misleading predictions. Adversarial attacks pose security concerns, particularly in applications where robustness and reliability are crucial.
