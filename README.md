@@ -27,3 +27,33 @@ Complexity issues:
 
 
 ![image](https://user-images.githubusercontent.com/96347878/202598209-f2a7aceb-a6c1-4698-97fd-3c705d19e5dd.png)
+----
+**Convolutional Neural Network (CNN):**<br/>
+A CNN is a type of deep learning algorithm that is widely used for processing and analyzing visual data such as images and videos. CNNs consist of multiple
+layers of interconnected neurons, including convolutional layers, pooling layers, and fully connected layers.<br/>
+ - `Convolution:` The mathematical operation of
+applying a filter/kernel to the input data, which
+helps extract features by performing elementwise
+multiplication and summation.
+ - `Convolutional Layer:` The layer in a CNN that
+applies convolutional operations to the input data
+using one or more filters/kernels.
+- `Filter/Kernel:` A small matrix of weights that is
+convolved with the input data to produce a
+feature map.
+ - `Feature Map:` The output of a convolutional layer, which represents the presence of specific
+features in the input data.
+ - `Pooling: `A downsampling operation that reduces
+the spatial dimensions of the feature maps by
+selecting the most important or representative
+values.
+ - `Pooling Layer:` The layer in a CNN that performs
+pooling operations to reduce the spatial
+dimensions and extract salient features from the
+feature maps.
+ - `Stride:` The step size used to move the
+filter/kernel during the convolution operation.
+ - `Padding:` Adding additional pixels or values
+around the input data to preserve spatial
+information during convolution.
+
