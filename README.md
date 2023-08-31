@@ -66,4 +66,11 @@ intensity.
   - `Step 3. Activation Function:` After the convolution operation, an activation function, such as ReLU (Rectified Linear Unit), is applied element-wise to introduce non-linearity.
  - `Step 4. Pooling Layers:` To reduce the spatial
 dimensions of the feature maps and extract the most important information, pooling layers are added. Common types of pooling operations include max pooling or average pooling. Pooling helps reduce the number of parameters and computational complexity while retaining the most salient features.
-
+ - `Step 5. Fully Connected Layers:` After several convolutional and pooling layers, the feature maps are flattened into a one-dimensional vector. These flattened features are then passed to one or more fully connected layers, where each neuron is connected to every neuron in the previous and next layers. Fully connected layers are responsible for performing high-level feature representation and can be used for classification or regression tasks.
+ - `Step 6. Output Layer:` The final fully connected
+layer is typically followed by an output layer that produces the desired output. The number of neurons in the output layer depends on the specific task. For example, in image classification, the number of neurons in the output layer corresponds to the number of classes, and the output represents the probability distribution over the classes.
+ - `Step 7. Loss Function and Optimization:` During
+training, the CNN's output is compared to the true labels using a loss function, such as crossentropy. The loss function measures the discrepancy between the predicted output and the true output. The goal of the training process is to minimize this loss. Optimization algorithms, such as gradient descent, are used to iteratively adjust the weights of the network based on the computed gradients.
+ - `Step 8. Backpropagation:` Backpropagation is used to compute and propagate gradients through the network. The gradients are used to update the weights in a direction that reduces the
+loss. The process of forward propagation and backpropagation is repeated for a certain number of epochs to train the CNN.
+ - `Step 9. Inference:` Once the CNN is trained, it can be used for inference on new, unseen data. The input data is passed through the network, and the output is obtained from the output layer.
