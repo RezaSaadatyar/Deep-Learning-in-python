@@ -110,6 +110,14 @@ RNN is a type of neural network that is created to handle sequences of data. Unl
 - `Time Step:` A discrete point in time in the sequential data being processed by an RNN.
 - `Teacher Forcing:` A frequently employed training technique for RNNs, wherein actual output values are reintroduced as inputs, as opposed to predicted values. This approach facilitates the acquisition of long-range dependencies during training
 
+**What is the mechanism behind the functioning of RNN?**
+- `Step 1. Input Preparation:`The first step involves preparing the input by encoding each element in the sequential data as a feature vector or embedding, such as words in a sentence or time steps in a time series. These input vectors are then sequentially fed into the RNN one at a time.
+- `Step 2. Hidden State Initialization:`In the second step of processing for an RNN, the hidden state is initialized before the first element is processed. This initialization is usually done by setting the hidden state to either zero or small random values. The purpose of the hidden state is to act as the memory for the network and store information from previous elements in the sequence.
+- `Step 3. Recurrent Unit Operation:`During each time step, the input vector and the previous hidden state are merged and then passed into the recurrent unit. The recurrent unit then utilizes the input and hidden state to carry out computations, resulting in an output and a modified hidden state.
+- `Step 4. Output Generation:`Depending on the task at hand, the recurrent unit's output at the present time step can serve different purposes. For instance, in language modeling, it can be utilized for forecasting the following word in the sequence.
+- `Step 5. Hidden State Update:`The hidden state of the recurrent unit is updated and carried over to the next time step, enabling the RNN to preserve past information and comprehend temporal dependencies.
+- `Step 6. Repeat for Remaining Elements:`The process of steps 3-5 is iterated for every element present in the sequential data, enabling the RNN to handle the complete sequence.
+- `Step 7. Output Utilization:`Once all the elements are processed, the RNN can utilize either the final hidden state or the sequence of outputs to perform the intended task, be it prediction, classification, or generation of new sequences.
 
 
 
