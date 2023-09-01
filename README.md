@@ -94,3 +94,20 @@ optimization techniques, such as backpropagation, to learn the optimal weights a
 - `Lack of Interpretability:` CNNs are often considered black-box models, meaning that it can be challenging to interpret and understand the
 decision-making process within the network. The complex hierarchical representations and a large number of parameters make it difficult to explain why a particular prediction or classification was made.
 - `Vulnerability to Adversarial Attacks:` CNNs have been shown to be vulnerable to adversarial attacks, where small, imperceptible perturbations to input images can lead to incorrect or misleading predictions. Adversarial attacks pose security concerns, particularly in applications where robustness and reliability are crucial.
+----
+**A Recurrent Neural Network (RNN):**<br/> 
+RNN is a type of neural network that is created to handle sequences of data. Unlike feedforward networks RNNs have connections that loop back, on themselves enabling them to retain a hidden state or memory of past inputs. This unique structure makes them highly suitable for tasks that involve data processing, such, as analyzing time series understanding language recognizing speech patterns and so on.
+
+**RNNs possess features and elements:**
+ - `Hidden State:` Within an RNN, the hidden state represents an enduring internal memory that extends across time steps, enabling the network to retain and recall information from preceding elements within the sequence.
+ - `Recurrent Unit:` The fundamental component of an RNN, it accepts an input along with the previous hidden state, generating both an output and a new hidden state.
+ - `Long Short-Term Memory (LSTM):` A variant of RNNs that introduces gating mechanisms to control the flow of information through the hidden state, enabling the network to capture long-term dependencies in sequential data.
+ - `Gated Recurrent Unit (GRU):` Another variant of RNNs that also uses gating mechanisms but has a simpler architecture compared to LSTM.
+- `Vanishing Gradient Problem:` A challenge in training RNNs where the gradients used for updating the network weights can become extremely small, leading to slow or ineffective learning.
+- `Exploding Gradient Problem:` A challenge in training RNNs where the gradients become extremely large, causing instability during the learning process.
+
+
+
+
+
+
