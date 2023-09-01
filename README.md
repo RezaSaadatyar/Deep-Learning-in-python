@@ -101,14 +101,16 @@ RNN is a type of neural network that is created to handle sequences of data. Unl
 **RNNs possess features and elements:**
  - `Hidden State:` Within an RNN, the hidden state represents an enduring internal memory that extends across time steps, enabling the network to retain and recall information from preceding elements within the sequence.
  - `Recurrent Unit:` The fundamental component of an RNN, it accepts an input along with the previous hidden state, generating both an output and a new hidden state.
- - `Long Short-Term Memory (LSTM):` LSTM is a type of RNN that uses gating mechanisms to regulate the flow of information in the hidden state. This allows the network to effectively capture long-term patterns in sequential data.
- - `Gated Recurrent Unit (GRU):` GRU is another type of RNN that incorporates gating mechanisms, but it has a more straightforward structure when compared to LSTM.
 - `Vanishing Gradient Problem:` It refers to the difficulty encountered when training RNNs due to the gradients used for updating the network weights becoming exceedingly small. This can result in slow or ineffective learning..
 - `Exploding Gradient Problem:` The issue of Exploding Gradient arises when training RNNs as the gradients become too large, leading to instability in the learning process.
 - `Sequence-to-Sequence (Seq2Seq):` The Seq2Seq framework is based on RNNs and is utilized for tasks that require sequential input and output, like text generation or machine translation.
  - `Bidirectional RNN:` It is a type of RNN that operates on the input sequence in both forward and backward directions. This enables the network to comprehend connections from both previous and forthcoming elements.
 - `Time Step:` A discrete point in time in the sequential data being processed by an RNN.
 - `Teacher Forcing:` A frequently employed training technique for RNNs, wherein actual output values are reintroduced as inputs, as opposed to predicted values. This approach facilitates the acquisition of long-range dependencies during training
+
+**Types of RNNs:** 
+- `Long Short-Term Memory (LSTM):` LSTM is a type of RNN that uses gating mechanisms to regulate the flow of information in the hidden state. This allows the network to effectively capture long-term patterns in sequential data.
+ - `Gated Recurrent Unit (GRU):` GRU is another type of RNN that incorporates gating mechanisms, but it has a more straightforward structure when compared to LSTM.
 
 **What is the mechanism behind the functioning of RNN?**
 - `Step 1. Input Preparation:`The first step involves preparing the input by encoding each element in the sequential data as a feature vector or embedding, such as words in a sentence or time steps in a time series. These input vectors are then sequentially fed into the RNN one at a time.
@@ -119,5 +121,17 @@ RNN is a type of neural network that is created to handle sequences of data. Unl
 - `Step 6. Repeat for Remaining Elements:`The process of steps 3-5 is iterated for every element present in the sequential data, enabling the RNN to handle the complete sequence.
 - `Step 7. Output Utilization:`Once all the elements are processed, the RNN can utilize either the final hidden state or the sequence of outputs to perform the intended task, be it prediction, classification, or generation of new sequences.
 
+**Advantages of RNN:**
+ - `Capturing Sequential Dependencies:`RNNs are great at capturing patterns in sequential data by maintaining an internal memory. They can remember and use information from previous elements in the sequence, making them effective for tasks that require understanding the order and context of the data.
+ - `Variable Length Input/Output:`RNNs process variable-length input and output sequences, making them useful in natural language processing where sentences have varying word counts. Unlike fixed-size input networks, RNNs can handle different input lengths.
+ - `Parameter Sharing:`RNNs reuse knowledge learned from earlier elements in the sequence through parameter sharing, making them more efficient and reducing the number of parameters needed to process a sequence compared to models that treat each time step independently.
+ - `Language Modeling and Sequence Generation:`RNNs are often used for language modeling, predicting the next word or generating new text. They are effective at capturing dependencies and context, resulting in coherent and relevant sequences.
+
+ **Disadvantages of RNN:**
+ - `Vanishing and Exploding Gradients:`Training RNNs can be challenging due to vanishing or exploding gradients. Backpropagating gradients through many time steps can cause extremely small or large signals, making it difficult to learn longterm dependencies or causing instability in training.
+ - `Computational Complexity`:RNNs can be computationally expensive for long sequences or large hidden state sizes. The sequential nature of RNNs makes it hard to parallelize computations across time steps, slowing down the training process and limiting scalability.
+ - `Sensitivity to Input Order:`RNNs are sensitive to input sequence order and even a small change can lead to different outputs. This makes RNNs more prone to noise or variations in input data.
+ - `Difficulty in Capturing Long-Term Dependencies:`RNNs can have difficulty capturing long-term dependencies, as the gradient signal may weaken and become ineffective in propagating information located far back in the sequence. This limitation can affect the model's ability to model long-range dependencies.
+- `Lack of Attention Mechanism:`RNNs lack a mechanism to focus on specific parts of input sequences, making it difficult for them to handle long or important sequences effectively.
 
 
