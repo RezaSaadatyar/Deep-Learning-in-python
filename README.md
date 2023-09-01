@@ -101,12 +101,14 @@ RNN is a type of neural network that is created to handle sequences of data. Unl
 **RNNs possess features and elements:**
  - `Hidden State:` Within an RNN, the hidden state represents an enduring internal memory that extends across time steps, enabling the network to retain and recall information from preceding elements within the sequence.
  - `Recurrent Unit:` The fundamental component of an RNN, it accepts an input along with the previous hidden state, generating both an output and a new hidden state.
- - `Long Short-Term Memory (LSTM):` A variant of RNNs that introduces gating mechanisms to control the flow of information through the hidden state, enabling the network to capture long-term dependencies in sequential data.
- - `Gated Recurrent Unit (GRU):` Another variant of RNNs that also uses gating mechanisms but has a simpler architecture compared to LSTM.
-- `Vanishing Gradient Problem:` A challenge in training RNNs where the gradients used for updating the network weights can become extremely small, leading to slow or ineffective learning.
-- `Exploding Gradient Problem:` A challenge in training RNNs where the gradients become extremely large, causing instability during the learning process.
-
-
+ - `Long Short-Term Memory (LSTM):` LSTM is a type of RNN that uses gating mechanisms to regulate the flow of information in the hidden state. This allows the network to effectively capture long-term patterns in sequential data.
+ - `Gated Recurrent Unit (GRU):` GRU is another type of RNN that incorporates gating mechanisms, but it has a more straightforward structure when compared to LSTM.
+- `Vanishing Gradient Problem:` It refers to the difficulty encountered when training RNNs due to the gradients used for updating the network weights becoming exceedingly small. This can result in slow or ineffective learning..
+- `Exploding Gradient Problem:` The issue of Exploding Gradient arises when training RNNs as the gradients become too large, leading to instability in the learning process.
+- `Sequence-to-Sequence (Seq2Seq):` The Seq2Seq framework is based on RNNs and is utilized for tasks that require sequential input and output, like text generation or machine translation.
+ - `Bidirectional RNN:` It is a type of RNN that operates on the input sequence in both forward and backward directions. This enables the network to comprehend connections from both previous and forthcoming elements.
+- `Time Step:` A discrete point in time in the sequential data being processed by an RNN.
+- `Teacher Forcing:` A frequently employed training technique for RNNs, wherein actual output values are reintroduced as inputs, as opposed to predicted values. This approach facilitates the acquisition of long-range dependencies during training
 
 
 
