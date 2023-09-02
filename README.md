@@ -97,10 +97,10 @@ RNN is a type of neural network that is created to handle sequences of data. Unl
  - `Parameter Sharing:`RNNs reuse knowledge learned from earlier elements in the sequence through parameter sharing, making them more efficient and reducing the number of parameters needed to process a sequence compared to models that treat each time step independently.
  - `Language Modeling and Sequence Generation:`RNNs are often used for language modeling, predicting the next word or generating new text. They are effective at capturing dependencies and context, resulting in coherent and relevant sequences.
 
- <span style="color: #FF0000"> **Disadvantages of RNN:**</span>  
+ <span style="color: #FF0000">**Disadvantages of RNN:**</span>  
  - `Vanishing and Exploding Gradients:`Training RNNs can be challenging due to vanishing or exploding gradients. Backpropagating gradients through many time steps can cause extremely small or large signals, making it difficult to learn longterm dependencies or causing instability in training.
  - `Computational Complexity`:RNNs can be computationally expensive for long sequences or large hidden state sizes. The sequential nature of RNNs makes it hard to parallelize computations across time steps, slowing down the training process and limiting scalability.
- - `Sensitivity to Input Order:`RNNs are sensitive to input sequence order and even a small change can lead to different outputs. This makes RNNs more prone to noise or variations in input data.#15f039
+ - `Sensitivity to Input Order:`RNNs are sensitive to input sequence order and even a small change can lead to different outputs. This makes RNNs more prone to noise or variations in input data.
  - `Difficulty in Capturing Long-Term Dependencies:`RNNs can have difficulty capturing long-term dependencies, as the gradient signal may weaken and become ineffective in propagating information located far back in the sequence. This limitation can affect the model's ability to model long-range dependencies.
 - `Lack of Attention Mechanism:`RNNs lack a mechanism to focus on specific parts of input sequences, making it difficult for them to handle long or important sequences effectively.
 ----
