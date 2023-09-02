@@ -29,7 +29,7 @@ Complexity issues:
 ![image](https://user-images.githubusercontent.com/96347878/202598209-f2a7aceb-a6c1-4698-97fd-3c705d19e5dd.png)
 ----
 **Convolutional Neural Network (CNN):**<br/>
-1️⃣ A CNN is a type of deep learning algorithm that is widely used for processing and analyzing visual data such as images and videos. CNNs consist of multiple
+A CNN is a type of deep learning algorithm that is widely used for processing and analyzing visual data such as images and videos. CNNs consist of multiple
 layers of interconnected neurons, including convolutional layers, pooling layers, and fully connected layers.<br/>
  - `Convolution:` Applying a filter or kernel to input data is a mathematical process that aids in feature extraction. This is accomplished by multiplying each element and then summing them.
  - `Convolutional Layer:` A CNN layer applies convolutional operations to the input data by using one or multiple filters/kernels.
