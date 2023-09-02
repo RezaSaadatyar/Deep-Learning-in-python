@@ -103,5 +103,6 @@ RNN is a type of neural network that is created to handle sequences of data. Unl
  - `Sensitivity to Input Order:`RNNs are sensitive to input sequence order and even a small change can lead to different outputs. This makes RNNs more prone to noise or variations in input data.
  - `Difficulty in Capturing Long-Term Dependencies:`RNNs can have difficulty capturing long-term dependencies, as the gradient signal may weaken and become ineffective in propagating information located far back in the sequence. This limitation can affect the model's ability to model long-range dependencies.
 - `Lack of Attention Mechanism:`RNNs lack a mechanism to focus on specific parts of input sequences, making it difficult for them to handle long or important sequences effectively.
+----
 
 
