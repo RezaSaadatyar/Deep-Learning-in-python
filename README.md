@@ -97,7 +97,7 @@ RNN is a type of neural network that is created to handle sequences of data. Unl
  - `Parameter Sharing:`RNNs reuse knowledge learned from earlier elements in the sequence through parameter sharing, making them more efficient and reducing the number of parameters needed to process a sequence compared to models that treat each time step independently.
  - `Language Modeling and Sequence Generation:`RNNs are often used for language modeling, predicting the next word or generating new text. They are effective at capturing dependencies and context, resulting in coherent and relevant sequences.
 
- <span style="color: #15ff00"> **Disadvantages of RNN:**  
+ <span style="color: #15ff00"> **Disadvantages of RNN:**  <span style="color: #15ff00">  
  - `Vanishing and Exploding Gradients:`Training RNNs can be challenging due to vanishing or exploding gradients. Backpropagating gradients through many time steps can cause extremely small or large signals, making it difficult to learn longterm dependencies or causing instability in training.
  - `Computational Complexity`:RNNs can be computationally expensive for long sequences or large hidden state sizes. The sequential nature of RNNs makes it hard to parallelize computations across time steps, slowing down the training process and limiting scalability.
  - `Sensitivity to Input Order:`RNNs are sensitive to input sequence order and even a small change can lead to different outputs. This makes RNNs more prone to noise or variations in input data.
