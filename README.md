@@ -31,31 +31,17 @@ Complexity issues:
 **Convolutional Neural Network (CNN):**<br/>
 A CNN is a type of deep learning algorithm that is widely used for processing and analyzing visual data such as images and videos. CNNs consist of multiple
 layers of interconnected neurons, including convolutional layers, pooling layers, and fully connected layers.<br/>
- - `Convolution:` The mathematical operation of
-applying a filter/kernel to the input data, which
-helps extract features by performing elementwise
-multiplication and summation.
- - `Convolutional Layer:` The layer in a CNN that
-applies convolutional operations to the input data
-using one or more filters/kernels.
+ - `Convolution:` Applying a filter or kernel to input data is a mathematical process that aids in feature extraction. This is accomplished by multiplying each element and then summing them.
+ - `Convolutional Layer:` A CNN layer applies convolutional operations to the input data by using one or multiple filters/kernels.
 - `Filter/Kernel:` A small matrix of weights that is
 convolved with the input data to produce a
 feature map.
  - `Feature Map:` The output of a convolutional layer, which represents the presence of specific
 features in the input data.
- - `Pooling: `A downsampling operation that reduces
-the spatial dimensions of the feature maps by
-selecting the most important or representative
-values.
- - `Pooling Layer:` The layer in a CNN that performs
-pooling operations to reduce the spatial
-dimensions and extract salient features from the
-feature maps.
- - `Stride:` The step size used to move the
-filter/kernel during the convolution operation.
- - `Padding:` Adding additional pixels or values
-around the input data to preserve spatial
-information during convolution.<br/>
+ - `Pooling: `This refers to a downsampling process that decreases the feature maps' spatial dimensions by picking out the most crucial or representative values.
+ - `Pooling Layer:` In a CNN, there is a layer that conducts pooling operations to decrease the spatial dimensions and capture significant characteristics from the feature maps.
+ - `Stride:` The step size used to move the filter/kernel during the convolution operation.
+ - `Padding:` Adding additional pixels or values around the input data to preserve spatial information during convolution.
 
 **What Is the Mechanism Behind CNNs?**
  - `Step 1, Input Layer:` In a CNN, input usually consists of one or more images. These images are represented as a matrix of pixels, with each pixel holding either color data (in RGB format) or grayscale intensity.
