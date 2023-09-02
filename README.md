@@ -82,26 +82,24 @@ RNN is a type of neural network that is created to handle sequences of data. Unl
  - `Gated Recurrent Unit (GRU):` GRU is another type of RNN that incorporates gating mechanisms, but it has a more straightforward structure when compared to LSTM.
 
 **What is the mechanism behind the functioning of RNN?**
-- `Step 1. Input Preparation:`The first step involves preparing the input by encoding each element in the sequential data as a feature vector or embedding, such as words in a sentence or time steps in a time series. These input vectors are then sequentially fed into the RNN one at a time.
-- `Step 2. Hidden State Initialization:`In the second step of processing for an RNN, the hidden state is initialized before the first element is processed. This initialization is usually done by setting the hidden state to either zero or small random values. The purpose of the hidden state is to act as the memory for the network and store information from previous elements in the sequence.
-- `Step 3. Recurrent Unit Operation:`During each time step, the input vector and the previous hidden state are merged and then passed into the recurrent unit. The recurrent unit then utilizes the input and hidden state to carry out computations, resulting in an output and a modified hidden state.
-- `Step 4. Output Generation:`Depending on the task at hand, the recurrent unit's output at the present time step can serve different purposes. For instance, in language modeling, it can be utilized for forecasting the following word in the sequence.
-- `Step 5. Hidden State Update:`The hidden state of the recurrent unit is updated and carried over to the next time step, enabling the RNN to preserve past information and comprehend temporal dependencies.
+- `Step 1. Input Preparation:` The first step involves preparing the input by encoding each element in the sequential data as a feature vector or embedding, such as words in a sentence or time steps in a time series. These input vectors are then sequentially fed into the RNN one at a time.
+- `Step 2. Hidden State Initialization:` In the second step of processing for an RNN, the hidden state is initialized before the first element is processed. This initialization is usually done by setting the hidden state to either zero or small random values. The purpose of the hidden state is to act as the memory for the network and store information from previous elements in the sequence.
+- `Step 3. Recurrent Unit Operation:` During each time step, the input vector and the previous hidden state are merged and then passed into the recurrent unit. The recurrent unit then utilizes the input and hidden state to carry out computations, resulting in an output and a modified hidden state.
+- `Step 4. Output Generation:` Depending on the task at hand, the recurrent unit's output at the present time step can serve different purposes. For instance, in language modeling, it can be utilized for forecasting the following word in the sequence.
+- `Step 5. Hidden State Update:` The hidden state of the recurrent unit is updated and carried over to the next time step, enabling the RNN to preserve past information and comprehend temporal dependencies.
 - `Step 6. Repeat for Remaining Elements:`The process of steps 3-5 is iterated for every element present in the sequential data, enabling the RNN to handle the complete sequence.
-- `Step 7. Output Utilization:`Once all the elements are processed, the RNN can utilize either the final hidden state or the sequence of outputs to perform the intended task, be it prediction, classification, or generation of new sequences.
+- `Step 7. Output Utilization:` Once all the elements are processed, the RNN can utilize either the final hidden state or the sequence of outputs to perform the intended task, be it prediction, classification, or generation of new sequences.
 
 **Advantages of RNN:**
  - `Capturing Sequential Dependencies:`RNNs are great at capturing patterns in sequential data by maintaining an internal memory. They can remember and use information from previous elements in the sequence, making them effective for tasks that require understanding the order and context of the data.
  - `Variable Length Input/Output:`RNNs process variable-length input and output sequences, making them useful in natural language processing where sentences have varying word counts. Unlike fixed-size input networks, RNNs can handle different input lengths.
- - `Parameter Sharing:`RNNs reuse knowledge learned from earlier elements in the sequence through parameter sharing, making them more efficient and reducing the number of parameters needed to process a sequence compared to models that treat each time step independently.
- - `Language Modeling and Sequence Generation:`RNNs are often used for language modeling, predicting the next word or generating new text. They are effective at capturing dependencies and context, resulting in coherent and relevant sequences.
+ - `Parameter Sharing:`RNNs reuse the knowledge learned from earlier elements in the sequence through parameter sharing, making them more efficient and reducing the number of parameters needed to process a sequence compared to models that treat each time step independently.
+ - `Language Modeling and Sequence Generation:`RNNs are often used for language modeling, predicting the next word, or generating new text. They are effective at capturing dependencies and context, resulting in coherent and relevant sequences.
 
 **Disadvantages of RNN:** 
- - `Vanishing and Exploding Gradients:`Training RNNs can be challenging due to vanishing or exploding gradients. Backpropagating gradients through many time steps can cause extremely small or large signals, making it difficult to learn longterm dependencies or causing instability in training.
+ - `Vanishing and Exploding Gradients:`Training RNNs can be challenging due to vanishing or exploding gradients. Backpropagating gradients through many time steps can cause extremely small or large signals, making it difficult to learn long-term dependencies or causing instability in training.
  - `Computational Complexity`:RNNs can be computationally expensive for long sequences or large hidden state sizes. The sequential nature of RNNs makes it hard to parallelize computations across time steps, slowing down the training process and limiting scalability.
  - `Sensitivity to Input Order:`RNNs are sensitive to input sequence order and even a small change can lead to different outputs. This makes RNNs more prone to noise or variations in input data.
  - `Difficulty in Capturing Long-Term Dependencies:`RNNs can have difficulty capturing long-term dependencies, as the gradient signal may weaken and become ineffective in propagating information located far back in the sequence. This limitation can affect the model's ability to model long-range dependencies.
 - `Lack of Attention Mechanism:`RNNs lack a mechanism to focus on specific parts of input sequences, making it difficult for them to handle long or important sequences effectively.
 ----
-
-
