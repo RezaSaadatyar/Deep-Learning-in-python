@@ -5,6 +5,6 @@
 - `Time Series Forecasting with CNN`
 - `Time Series Classification `
 
-![Alt text](1-1.jpg)
+![Alt text](1-1.jpg)  ![Alt text](2-1.jpg)
 
 
