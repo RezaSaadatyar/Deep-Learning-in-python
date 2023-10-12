@@ -51,4 +51,4 @@ def sequences_data(data, x_steps=6, y_steps=2, train_size=0.7, nfeatures=1):
     
     x_test = x_test.reshape((x_test.shape[0], x_test.shape[1], 1))
     
-    return x_train, y_train, x_test, y_test, dat_train, dat_test, mod
+    return x_train, y_train, x_test, y_test, mod
