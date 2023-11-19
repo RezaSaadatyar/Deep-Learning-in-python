@@ -5,7 +5,6 @@ Backpropagation is an algorithm for supervised learning of artificial neural net
 ![image](https://github.com/RezaSaadatyar/Deep-Learning-in-python/assets/96347878/b08a633b-4120-4603-b4a1-bf07301de1ad)
 
 
-
 Having too much information<br/>
 A sufficient number of computing resources<br/>
 
