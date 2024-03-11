@@ -4,7 +4,6 @@
 Backpropagation is an algorithm for supervised learning of artificial neural networks using gradient descent. This is because artificial neural networks use backpropagation as a learning algorithm to compute a gradient descent with respect to weight values for the various inputs. By comparing desired outputs to achieved system outputs, the systems are tuned by adjusting connection weights to narrow the difference between the two as much as possible. It is a generalization of the delta rule for perceptrons to multilayer feedforward neural networks.
 ![image](https://github.com/RezaSaadatyar/Deep-Learning-in-python/assets/96347878/b08a633b-4120-4603-b4a1-bf07301de1ad)
 
-
 Having too much information<br/>
 A sufficient number of computing resources<br/>
 
