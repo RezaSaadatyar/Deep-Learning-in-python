@@ -13,7 +13,17 @@ sig = std(datatrain);
 datatrainstd = (datatrain - mu) / sig;
 xtrain = datatrainstd(1:end-1);
 ytrain = datatrainstd(2:end);
-
+%%  Define LSTM Network Architecture
+NOF=1;
+NOR=1;
+NHU=200;
+layers=[
+sequenceInputLayer(NOF, "Name", "ip")
+lstmLayer(NHU, "Name", "lstm")
+fullyConnectedLayer(NOR, "Name", "FC")
+regressionLayer("Name", "RL")];
+% lgraph=layerGraph(layers);
+% plot (lgraph)
 
 %% -------------------------------------- Plot ---------------------------------------
 figure;
