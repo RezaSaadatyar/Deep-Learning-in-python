@@ -1,5 +1,8 @@
 **Deep Learning in Python**
 
+[View Jupyter Notebook][def]
+
+
 **Creating Deep Learning model step by step**<br/>
 - `Data Preprocessing:`
   - *Cleaning:* Handle missing values, remove duplicates, and correct errors.
@@ -143,3 +146,6 @@ RNN is a type of neural network that is created to handle sequences of data. Unl
  - `Difficulty in Capturing Long-Term Dependencies:`RNNs can have difficulty capturing long-term dependencies, as the gradient signal may weaken and become ineffective in propagating information located far back in the sequence. This limitation can affect the model's ability to model long-range dependencies.
 - `Lack of Attention Mechanism:`RNNs lack a mechanism to focus on specific parts of input sequences, making it difficult for them to handle long or important sequences effectively.
 ----
+
+
+[def]: [URL_TO_YOUR_NOTEBOOK](https://github.com/RezaSaadatyar/Deep-Learning-in-python/blob/main/Code/Deep_Learning.ipynb)
