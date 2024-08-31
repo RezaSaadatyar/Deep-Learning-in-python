@@ -6,14 +6,14 @@
   - *Normalization/Standardization:* Scale numerical data to improve the model's performance.
   - *Encoding:* Convert categorical data into numerical format (e.g., `one-hot encoding` or `label encoding`).
   - *Augmentation (for images):* Apply transformations like rotations, flips, and shifts to artificially expand the dataset.
-- `Data Splitting:`<br/>
+- `Data Splitting:`
    Divide the data into training, validation, and test sets (e.g., 70% training, 15% validation, 15% testing).
 - `Choose a Model Architecture (Select Model Type):`
   - *Feedforward Neural Networks (FNNs)* for tabular data.
   - *Convolutional Neural Networks (CNNs)* for image classification.
   - *Recurrent Neural Networks (RNNs)* or *Long Short-Term Memory (LSTM)* networks for time series or sequence data.
   - *Transformers* for language models or advanced sequence processing.
-- `Define Layers:`<br/> 
+- `Define Layers:` 
    Determine the number of layers, *types of layers* (`Dense, Conv2D`, `LSTM`, etc.), *activation functions* (`ReLU`, `Sigmoid`, `Softmax`), and *layer configurations*.
 - `Configure the Model (Compile the Model):`
   - *Loss Function:* Choose an appropriate loss function (e.g., `categorical cross-entropy for classification`, `mean squared error` for regression).
@@ -27,7 +27,7 @@
    - *Training Process:*
       - Fit the model on the training data using the `.fit()` method (if using libraries like TensorFlow/Keras).
       - Use validation data to tune the model and check for overfitting or underfitting.
-   - *Monitor Training:*<br/>
+   - *Monitor Training:*
       Use callbacks like *Early Stopping*, *Model Checkpoint*, or *Learning Rate Schedulers* to improve training efficiency.
 - `Evaluate the Mode:`
    - *Performance on Test Data:* Evaluate the model on the test set to check how well it generalizes to unseen data.
