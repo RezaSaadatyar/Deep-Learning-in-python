@@ -1,6 +1,6 @@
 **Deep Learning in Python**
 
-[View Jupyter Notebook][https://github.com/RezaSaadatyar/Deep-Learning-in-python/blob/main/Code/Deep_Learning.ipynb]
+[View Jupyter Notebook][Code/Deep_Learning.ipynb]
 
 **Creating Deep Learning model step by step**<br/>
 - `Data Preprocessing:`
