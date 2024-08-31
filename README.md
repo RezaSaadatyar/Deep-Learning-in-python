@@ -6,14 +6,14 @@
   - *Normalization/Standardization:* Scale numerical data to improve the model's performance.
   - *Encoding:* Convert categorical data into numerical format (e.g., `one-hot encoding` or `label encoding`).
   - *Augmentation (for images):* Apply transformations like rotations, flips, and shifts to artificially expand the dataset.
-- `Data Splitting:`
+- `Data Splitting:`<br/>
    Divide the data into training, validation, and test sets (e.g., 70% training, 15% validation, 15% testing).
 - `Choose a Model Architecture (Select Model Type):`
   - *Feedforward Neural Networks (FNNs)* for tabular data.
   - *Convolutional Neural Networks (CNNs)* for image classification.
   - *Recurrent Neural Networks (RNNs)* or *Long Short-Term Memory (LSTM)* networks for time series or sequence data.
   - *Transformers* for language models or advanced sequence processing.
-- `Define Layers:` 
+- `Define Layers:`<br/> 
    Determine the number of layers, *types of layers* (`Dense, Conv2D`, `LSTM`, etc.), *activation functions* (`ReLU`, `Sigmoid`, `Softmax`), and *layer configurations*.
 - `Configure the Model (Compile the Model):`
   - *Loss Function:* Choose an appropriate loss function (e.g., `categorical cross-entropy for classification`, `mean squared error` for regression).
