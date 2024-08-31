@@ -1,5 +1,47 @@
 **Deep Learning in Python**
 
+**Creating Deep Learning model step by step**<br/>
+- `Data Preprocessing:`
+  - *Cleaning:* Handle missing values, remove duplicates, and correct errors.
+  - *Normalization/Standardization:* Scale numerical data to improve the model's performance.
+  - *Encoding:* Convert categorical data into numerical format (e.g., `one-hot encoding` or `label encoding`).
+  - *Augmentation (for images):* Apply transformations like rotations, flips, and shifts to artificially expand the dataset.
+- `Data Splitting:`<br/>
+   Divide the data into training, validation, and test sets (e.g., 70% training, 15% validation, 15% testing).
+- `Choose a Model Architecture (Select Model Type):`
+  - *Feedforward Neural Networks (FNNs)* for tabular data.
+  - *Convolutional Neural Networks (CNNs)* for image classification.
+  - *Recurrent Neural Networks (RNNs)* or *Long Short-Term Memory (LSTM)* networks for time series or sequence data.
+  - *Transformers* for language models or advanced sequence processing.
+- `Define Layers:`<br/> 
+   Determine the number of layers, *types of layers* (`Dense, Conv2D`, `LSTM`, etc.), *activation functions* (`ReLU`, `Sigmoid`, `Softmax`), and *layer configurations*.
+- `Configure the Model (Compile the Model):`
+  - *Loss Function:* Choose an appropriate loss function (e.g., `categorical cross-entropy for classification`, `mean squared error` for regression).
+  - *Optimizer:* Select an optimizer (e.g., `SGD`,` Adam`) to update model weights during training.
+  - *Metrics:* Specify metrics to evaluate the model's performance (e.g., `accuracy`, `precision`).
+- `Train the Model:`
+   - *Set Hyperparameters:*
+      - Batch Size: Number of samples processed before the model is updated.
+      - Epochs: Number of complete passes through the training dataset.
+      - Learning Rate: Controls how much to adjust the weights during training.
+   - *Training Process:*
+      - Fit the model on the training data using the `.fit()` method (if using libraries like TensorFlow/Keras).
+      - Use validation data to tune the model and check for overfitting or underfitting.
+   - *Monitor Training:*<br/>
+      Use callbacks like *Early Stopping*, *Model Checkpoint*, or *Learning Rate Schedulers* to improve training efficiency.
+- `Evaluate the Mode:`
+   - *Performance on Test Data:* Evaluate the model on the test set to check how well it generalizes to unseen data.
+   - *Metrics Analysis:* Review performance metrics such as accuracy, loss, confusion matrix, ROC-AUC for classification, or R-squared for regression.
+   - *Error Analysis:* Identify specific instances where the model fails to perform well and understand the reasons.
+- `Tune the Model (Hyperparameter Tuning):`
+   - *Adjust Hyperparameters:* Experiment with different hyperparameters (`learning rate`, `batch size`, `number of layers`, `neurons per layer`, etc.).
+   - *Cross-Validation:* Use techniques like `k-fold cross-validation` to better assess model performance.
+   - *Automated Tuning:* Utilize tools like `Grid Search`, `Random Search`, or `Bayesian Optimization` for systematic hyperparameter tuning.
+- `Deploy the Model:`
+   - *Model Export:* Save the trained model in a format suitable for deployment (e.g., `HDF5`, `SavedModel`).
+   - *Deployment Options:* Choose how to deploy the model (e.g., as a `REST API using Flask/Django`, `using cloud services like AWS, Azure, or GCP`).
+
+
 - [x] **Backpropagation (Backward propagation of errors):**<br/>
 Backpropagation is an algorithm for supervised learning of artificial neural networks using gradient descent. This is because artificial neural networks use backpropagation as a learning algorithm to compute a gradient descent with respect to weight values for the various inputs. By comparing desired outputs to achieved system outputs, the systems are tuned by adjusting connection weights to narrow the difference between the two as much as possible. It is a generalization of the delta rule for perceptrons to multilayer feedforward neural networks.
 ![image](https://github.com/RezaSaadatyar/Deep-Learning-in-python/assets/96347878/b08a633b-4120-4603-b4a1-bf07301de1ad)
