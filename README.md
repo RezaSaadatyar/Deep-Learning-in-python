@@ -1,7 +1,5 @@
 **Deep Learning in Python**
 
-[View Jupyter Notebook](Code/Deep_Learning.ipynb)
-
 **Creating Deep Learning model step by step**<br/>
 - `Data Preprocessing:`
   - *Cleaning:* Handle missing values, remove duplicates, and correct errors.
