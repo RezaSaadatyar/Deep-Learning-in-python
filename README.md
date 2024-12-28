@@ -1,4 +1,4 @@
-**Deep Learning in Python**
+<font color='#FFE15D'><b> Deep Learning in Python </b></font>
 
 
 **Creating Deep Learning model step by step**<br/>
